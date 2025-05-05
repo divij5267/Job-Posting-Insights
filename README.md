@@ -6,48 +6,36 @@
 
 ## 🔍 Overview
 
-LinkedIn-BizComm-Insights is a comprehensive analysis of over 1.5 million LinkedIn job postings, focusing specifically on business communication skills demanded in today's job market. This project leverages large-scale web scraping, natural language processing, and data visualization techniques to identify patterns in how employers articulate their requirements for professional communication abilities.
+LinkedIn/Indeed-BizComm-Insights is a comprehensive analysis of over 1.5 million LinkedIn and Indeed job postings, focusing specifically on business communication skills demanded in today's job market. This project leverages large-scale web scraping, natural language processing, and data visualization techniques to identify patterns in how employers articulate their requirements for professional communication abilities.
 
 Developed as part of business communication coursework at Duke University's Fuqua School of Business, this repository provides data-driven insights for job seekers, educators, professionals, and researchers interested in understanding the communication competencies most valued by employers.
 
 ## 📊 Key Features
 
-- **Large-scale LinkedIn job scraping methodology**
+- **Large-scale LinkedIn and Indeed job scraping methodology**
 - **Text processing pipeline for communication skills extraction**
-- **Word cloud visualizations of key communication competencies**
+- **Word cloud and Bar Charts visualizations of key communication competencies**
 - **Industry-specific communication skills analysis**
 - **Seniority-level requirement differentiation**
-- **Trend analysis of evolving communication skills demands**
 
 ## 🛠️ Technology Stack
 
 - Python for data collection and processing
-- BeautifulSoup/Selenium for web scraping
-- NLTK/spaCy for natural language processing
-- Pandas for data manipulation
-- Matplotlib/Wordcloud for visualizations
-- Jupyter notebooks for analysis documentation
-
+- R for the Rest
+  
 ## 📂 Repository Structure
 
 ```
 ├── data/                      # Data directory (not included - see Data Availability section)
 │   ├── raw/                   # Raw scraped LinkedIn job listings
-│   ├── processed/             # Processed job descriptions
-│   └── analysis/              # Analysis results
-├── notebooks/                 # Jupyter notebooks
-│   ├── 01_data_collection.ipynb    # Web scraping methodology
-│   ├── 02_data_processing.ipynb    # Text cleaning and processing
-│   ├── 03_skills_extraction.ipynb  # Communication skills identification
-│   └── 04_visualization.ipynb      # Word cloud generation
-├── src/                       # Source code
-│   ├── scraper/               # LinkedIn scraper code
-│   ├── processor/             # Text processing utilities
-│   ├── analyzer/              # Analysis algorithms
-│   └── visualizer/            # Visualization code
+│   ├── processed/             # Processed for Analysis
+│   
+├── Code/                      # Jupyter notebooks
+│   ├── 01_data_collection and processing.ipynb    # Web scraping methodology, Text cleaning and processing   
+│   ├── 02 Code.R              # Data Analysis and Visualzations.
 ├── results/                   # Generated visualizations and findings
-│   ├── wordclouds/            # Word cloud images by industry/seniority
-│   └── reports/               # Analysis reports
+│   ├── wordclouds/            # Word cloud images by Role/Seniority/Importance
+│   └── barcharts/             # Bar Chart Images by Role/Seniority/Importance
 ├── requirements.txt           # Project dependencies
 ├── LICENSE                    # License information
 └── README.md                  # Project documentation
@@ -58,6 +46,7 @@ Developed as part of business communication coursework at Duke University's Fuqu
 ### Prerequisites
 
 - Python 3.8+
+- R
 - Required packages (see requirements.txt)
 
 ### Installation
@@ -75,35 +64,47 @@ source venv/bin/activate  # On Windows: venv\Scripts\activate
 pip install -r requirements.txt
 ```
 
-### Usage
+## 🔬 Methodology
 
-1. **Data Collection** (note: we provide processed data samples due to LinkedIn's Terms of Service)
-   ```bash
-   python src/scraper/run_scraper.py --config config/scraper_config.yaml
-   ```
+We conducted two distinct analyses to capture different aspects of communication skills importance:
 
-2. **Analysis Pipeline**
-   ```bash
-   python src/processor/process_jobs.py --input data/raw --output data/processed
-   python src/analyzer/extract_skills.py --input data/processed --output data/analysis
-   ```
+1. **Frequency Analysis**: Words/tokens were counted each time they appeared in job descriptions, giving higher weight to repeatedly mentioned skills within a single posting.
 
-3. **Generate Visualizations**
-   ```bash
-   python src/visualizer/create_wordclouds.py --input data/analysis --output results/wordclouds
-   ```
+2. **Presence Analysis**: Each word/token was counted only once per job description regardless of repetition, focusing on the breadth of skills demanded rather than repetition emphasis.
 
-Alternatively, you can follow the step-by-step process in the Jupyter notebooks.
+This dual approach provides complementary views of the data:
+- Frequency analysis highlights skills that employers emphasize through repetition
+- Presence analysis reveals the diversity of communication skills required across positions
+
+The resulting word clouds and analyses from both methods offer unique insights into how employers value and articulate communication requirements.
+
 
 ## 📈 Key Findings
 
-Our analysis reveals several interesting patterns in how employers articulate their communication needs:
+Our analysis of 1.5 million+ LinkedIn job descriptions reveals significant patterns in how employers articulate business communication requirements:
 
-- Written communication remains the most frequently mentioned skill across all industries
-- Industry-specific communication requirements vary significantly (e.g., technical writing in tech, persuasive communication in sales)
-- Senior roles emphasize strategic communication and leadership communication skills
-- Digital communication platforms and tools feature prominently in recent job listings
-- Cross-cultural communication abilities are increasingly valued in global companies
+### Frequency Analysis Insights
+- "Report" emerges as the dominant communication-related term across job postings, suggesting report writing/preparation is the most valued communication skill
+- "Document" appears as the second most frequent term, highlighting the importance of documentation skills
+- "Collaborate" features prominently, indicating that employers highly value team communication abilities
+- There is a steep decline after the top few terms, showing a clear hierarchy in communication priorities
+- Terms like "presentation," "meeting," and "stakeholder" demonstrate the importance of formal communication channels
+- The frequency distribution follows a classic long-tail pattern, with a small set of communication terms appearing much more frequently than others
+
+### Presence Analysis Insights
+- Even when controlling for repetition within job descriptions, "report" remains the most frequently mentioned communication skill
+- The word cloud for presence analysis shows greater visual balance between terms compared to frequency analysis
+- Terms related to collaboration and teamwork maintain significant prominence even when counted only once per job
+- Industry-specific communication terms appear more prominently in the presence analysis
+- The presence analysis reveals a broader, more diverse set of business communication requirements that might be overlooked in pure frequency analysis
+- "Communicate" itself appears as a distinct requirement, showing that explicit communication skills are directly requested
+
+### Combined Findings
+- Written communication skills (reporting, documentation) consistently outrank other forms of business communication
+- Both analysis methods show that employers value communication that serves organizational purposes (reports, documentation) over general communication abilities
+- Collaborative communication is fundamentally important across the job market
+- The consistency between both analysis methods validates the importance of the top communication skills identified
+
 
 ## 🔒 Data Availability
 
