@@ -21,7 +21,7 @@ Developed as part of business communication coursework at Duke University's Fuqu
 ## 🛠️ Technology Stack
 
 - Python for data collection and processing
-- R for the Rest
+- R for the rest
   
 ## 📂 Repository Structure
 
