@@ -118,13 +118,13 @@ Due to LinkedIn's Terms of Service, we cannot share the raw scraped data. Howeve
 If you use this work in your research or projects, please cite:
 
 ```
-@misc{LinkedInBizCommInsights2025,
-  author = {Your Name},
+@misc{LinkedInIndeedBizCommInsights2025,
+  author = {Divij Yanduru},
   title = {LinkedIn-BizComm-Insights: Analysis of Business Communication Skills in 1.5M+ Job Listings},
   year = {2025},
   publisher = {GitHub},
   journal = {GitHub repository},
-  howpublished = {\url{https://github.com/your-username/LinkedIn-BizComm-Insights}}
+  howpublished = {\url{https://github.com/divij5267/LinkedIn-Indeed-BizComm-Insights}}
 }
 ```
 
@@ -138,7 +138,7 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 ## 📧 Contact
 
-For questions or feedback, please reach out at your.email@duke.edu or connect with me on [LinkedIn](https://www.linkedin.com/in/your-profile/).
+For questions or feedback, please reach out at yandurud@gmail.com or connect with me on [LinkedIn](https://www.linkedin.com/in/divijyanduru)
 
 ---
 
