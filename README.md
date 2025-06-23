@@ -47,14 +47,13 @@ Developed as part of business communication coursework at Duke University's Fuqu
 
 - Python 3.8+
 - R
-- Required packages (see requirements.txt)
 
 ### Installation
 
 ```bash
 # Clone the repository
-git clone https://github.com/your-username/LinkedIn-BizComm-Insights.git
-cd LinkedIn-BizComm-Insights
+git clone https://github.com/divij5267/Job-Posting-Insights.git
+cd Job-Posting-Insights
 
 # Set up virtual environment
 python -m venv venv
@@ -118,9 +117,9 @@ Due to LinkedIn's Terms of Service, we cannot share the raw scraped data. Howeve
 If you use this work in your research or projects, please cite:
 
 ```
-@misc{LinkedInIndeedBizCommInsights2025,
+@misc{JobPostingInsights2025,
   author = {Divij Yanduru},
-  title = {LinkedIn-BizComm-Insights: Analysis of Business Communication Skills in 1.5M+ Job Listings},
+  title = {Job-Posting-Insights: Analysis of Business Communication Skills in 1.5M+ Job Listings},
   year = {2025},
   publisher = {GitHub},
   journal = {GitHub repository},
