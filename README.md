@@ -6,7 +6,7 @@
 
 ## 🔍 Overview
 
-LinkedIn/Indeed-BizComm-Insights is a comprehensive analysis of over 1.5 million LinkedIn and Indeed job postings, focusing specifically on business communication skills demanded in today's job market. This project leverages large-scale web scraping, natural language processing, and data visualization techniques to identify patterns in how employers articulate their requirements for professional communication abilities.
+Job-Posting-Insights is a comprehensive analysis of over 1.5 million LinkedIn and Indeed job postings, focusing specifically on business communication skills demanded in today's job market. This project leverages large-scale web scraping, natural language processing, and data visualization techniques to identify patterns in how employers articulate their requirements for professional communication abilities.
 
 Developed as part of business communication coursework at Duke University's Fuqua School of Business, this repository provides data-driven insights for job seekers, educators, professionals, and researchers interested in understanding the communication competencies most valued by employers.
 
