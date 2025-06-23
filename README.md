@@ -137,7 +137,7 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 ## 📧 Contact
 
-For questions or feedback, please reach out at yandurud@gmail.com or connect with me on [LinkedIn](https://www.linkedin.com/in/divijyanduru)
+For questions or feedback, please reach out at [LinkedIn](https://www.linkedin.com/in/divijyanduru)
 
 ---
 
