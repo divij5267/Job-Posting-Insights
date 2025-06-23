@@ -1,4 +1,4 @@
-# LinkedIn/Indeed-BizComm-Insights
+# Job-Posting-Insights
 
 ![Business Communication Skills Analysis](https://img.shields.io/badge/Analysis-Business%20Communication-blue)
 ![Data Size](https://img.shields.io/badge/Data-1.5M%2B%20Jobs-green)
